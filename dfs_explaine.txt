@@ -1,0 +1,23 @@
+adjacent(start)
+    ↓
+coloca os vizinhos do início na stack
+
+pop() da lista do topo
+    ↓
+escolhe próximo vizinho
+
+discovered.add()
+    ↓
+marca como visitado
+
+stack.append(adjacent(neighbour))
+    ↓
+DESCE para esse vizinho
+
+stack[-1] == []
+    ↓
+acabaram os caminhos desse nó
+
+stack.pop()
+    ↓
+SOBE para o pai
